@@ -16,11 +16,19 @@
 int seconds;
 int secondsRemaining;
 
--(void) viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
     
     secondsRemaining = 10;
     [self countdownTimer];
+    
+    red = 0.0;
+    green = 0.0;
+    blue = 0.0;
+    brush = 10.0;
+    opacity = 1.0;
+    
+    
 }
 
 -(void)countdownTimer
@@ -44,6 +52,23 @@ int secondsRemaining;
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
 - (IBAction)doneDrawing:(id)sender {
+    
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    mouseSwiped = NO;
+    UITouch *touch = [touches anyObject];
+    lastPoint = [touch locationInView:self.view];
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    mouseSwiped = YES;
+    UITouch *touch = [touches anyObject];
+    CGPoint currentPoint = [touch locationInView:self.view];
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
     
 }
 

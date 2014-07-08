@@ -83,7 +83,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-no-NAh">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-no-NAh" customClass="FBUDrawView">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -119,6 +119,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="dgM-mi-bwn"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="drawPane" destination="hJe-no-NAh" id="80b-MA-Aip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sss-Ox-FKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
