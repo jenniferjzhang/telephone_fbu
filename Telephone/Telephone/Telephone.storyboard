@@ -50,14 +50,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocU-sb-SBB">
-                                <rect key="frame" x="507" y="259" width="60" height="60"/>
+                                <rect key="frame" x="508" y="260" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OaA-Ie-q2K">
-                                <rect key="frame" x="507" y="259" width="60" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0TW-L4-1Dt">
+                                <rect key="frame" x="508" y="260" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -66,11 +66,12 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="instructionsButton" destination="ocU-sb-SBB" id="zbh-cc-yLG"/>
-                        <outlet property="instructionsImage" destination="OaA-Ie-q2K" id="mnE-pm-nr8"/>
-                        <outlet property="numberOfPlayers" destination="YhZ-LR-l9a" id="Cbz-fA-FfD"/>
-                        <outlet property="startButton" destination="yCF-ON-c3c" id="VDx-D9-Xwo"/>
-                        <outlet property="titleLabel" destination="mc6-M9-KFd" id="bSO-5b-BcY"/>
+                        <outlet property="instructionsButton" destination="ocU-sb-SBB" id="Sgd-Sg-Mu2"/>
+                        <outlet property="instructionsImage" destination="0TW-L4-1Dt" id="nlq-wI-gUL"/>
+                        <outlet property="numberOfPlayers" destination="YhZ-LR-l9a" id="vKd-bP-cev"/>
+                        <outlet property="playersLabel" destination="JCT-pL-mrH" id="xY4-Xx-fWQ"/>
+                        <outlet property="startButton" destination="yCF-ON-c3c" id="zTc-91-Cqs"/>
+                        <outlet property="titleLabel" destination="mc6-M9-KFd" id="23U-h3-499"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whg-ME-LEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -151,12 +152,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDJ-Lp-HpO">
-                                <rect key="frame" x="508" y="289" width="52" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu9-NV-OGH">
+                                <rect key="frame" x="425" y="260" width="103" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="TEST BUTTON">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AE9-Sh-Esx" kind="push" id="zlG-H4-I5h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -176,4 +181,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="wn4-H1-odX"/>
+    </inferredMetricsTieBreakers>
 </document>

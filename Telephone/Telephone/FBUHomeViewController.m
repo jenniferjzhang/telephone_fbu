@@ -23,4 +23,31 @@
     return YES;
 }
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self) {
+        
+        self.instructionsImage.image = [UIImage imageNamed:@"questionmark.png"];
+        
+    }
+    
+    return self;
+}
+
+- (void)prepareViewsForOrientation:(UIInterfaceOrientation)orientation
+{
+    //Is it an iPad? No preparation necessary?
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        return;
+    }
+    
+    //Is it landscape?
+    if (UIInterfaceOrientationIsLandscape(orientation)) {
+        self.instructionsImage.hidden = NO;
+    }
+}
+
+
 @end
