@@ -16,7 +16,7 @@
 
 @property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, retain) UILabel *counterLabel;
--(void) updateCounter: (NSTimer *) counter;
+-(void) updateCounter;
 -(void) countdownTimer;
 
 @end

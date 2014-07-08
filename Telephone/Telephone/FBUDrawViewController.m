@@ -27,12 +27,12 @@ int secondsRemaining;
 {
     timer = [NSTimer scheduledTimerWithTimeInterval:10.0
                                              target:self
-                                           selector:@selector(updateCounter:)
+                                           selector:@selector(updateCounter)
                                            userInfo:nil
                                             repeats:YES];
 }
 
-- (void) updateCounter:(NSTimer *)counter {
+- (void) updateCounter {
     secondsRemaining--;
     seconds = 10-secondsRemaining;
     counterLabel.text = [NSString stringWithFormat:@"%d", secondsRemaining];
