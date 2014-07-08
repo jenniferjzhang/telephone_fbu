@@ -14,13 +14,12 @@
 @synthesize timer;
 @synthesize timerLabel;
 
-int seconds;
 int secondsRemaining;
 
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    secondsRemaining = 10;
+    secondsRemaining = 11;
     [self countdownTimer];
     
     red = 0.0;
@@ -42,9 +41,11 @@ int secondsRemaining;
 }
 
 - (void) updateCounter {
-    secondsRemaining--;
-    seconds = 10-secondsRemaining;
-    timerLabel.text = [NSString stringWithFormat:@"%d", secondsRemaining];
+    if (secondsRemaining > 0) {
+        secondsRemaining--;
+        timerLabel.text = [NSString stringWithFormat:@"%d", secondsRemaining];
+    }
+    
 }
 
 - (NSUInteger)supportedInterfaceOrientations
