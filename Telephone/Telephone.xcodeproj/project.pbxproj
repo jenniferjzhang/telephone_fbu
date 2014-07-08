@@ -21,6 +21,8 @@
 		D24FDEE7196B752D00BC3992 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D24FDEE5196B752D00BC3992 /* InfoPlist.strings */; };
 		D24FDEE9196B752D00BC3992 /* TelephoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEE8196B752D00BC3992 /* TelephoneTests.m */; };
 		D24FDEF4196B77F600BC3992 /* FBUDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */; };
+		D24FDEF6196C4E5800BC3992 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24FDEF5196C4E5800BC3992 /* Storyboard.storyboard */; };
+		D24FDEF9196C501200BC3992 /* FBUHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEF8196C501200BC3992 /* FBUHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		D24FDEE8196B752D00BC3992 /* TelephoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelephoneTests.m; sourceTree = "<group>"; };
 		D24FDEF2196B77F600BC3992 /* FBUDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUDrawViewController.h; sourceTree = "<group>"; };
 		D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUDrawViewController.m; sourceTree = "<group>"; };
+		D24FDEF5196C4E5800BC3992 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		D24FDEF7196C501200BC3992 /* FBUHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUHomeViewController.h; sourceTree = "<group>"; };
+		D24FDEF8196C501200BC3992 /* FBUHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 			children = (
 				D24FDED2196B752D00BC3992 /* FBUAppDelegate.h */,
 				D24FDED3196B752D00BC3992 /* FBUAppDelegate.m */,
+				D24FDEF5196C4E5800BC3992 /* Storyboard.storyboard */,
+				D24FDEF7196C501200BC3992 /* FBUHomeViewController.h */,
+				D24FDEF8196C501200BC3992 /* FBUHomeViewController.m */,
 				D24FDEF2196B77F600BC3992 /* FBUDrawViewController.h */,
 				D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */,
 				B0191F92196C4754005D92EA /* FBUDrawView.h */,
@@ -232,6 +240,7 @@
 			files = (
 				D24FDECE196B752D00BC3992 /* InfoPlist.strings in Resources */,
 				D24FDED6196B752D00BC3992 /* Images.xcassets in Resources */,
+				D24FDEF6196C4E5800BC3992 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +261,7 @@
 			files = (
 				D24FDED4196B752D00BC3992 /* FBUAppDelegate.m in Sources */,
 				D24FDED0196B752D00BC3992 /* main.m in Sources */,
+				D24FDEF9196C501200BC3992 /* FBUHomeViewController.m in Sources */,
 				B0191F94196C4754005D92EA /* FBUDrawView.m in Sources */,
 				D24FDEF4196B77F600BC3992 /* FBUDrawViewController.m in Sources */,
 			);
