@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>F54DDB16-96FF-4934-AE88-0C2684CBB57E</string>
+=======
+	<string>7F463704-C608-45C6-B11B-B30B8E91A9AE</string>
+>>>>>>> 016d6117c17287d341fc5ca15049e8bd8a280697
 	<key>IDESourceControlProjectName</key>
 	<string>Telephone</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
