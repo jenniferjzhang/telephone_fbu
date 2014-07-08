@@ -16,4 +16,13 @@
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    NSArray *wordDB = @[@"Hello Kitty", @"Facebook", @"Breaking Bad"];
+    
+    self.wordLabel.text = @"Hello Kitty";
+}
+
 @end

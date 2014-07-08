@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface FBUWordViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 
 @end
