@@ -14,6 +14,7 @@
     IBOutlet UILabel *counterLabel;
 }
 
+@property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, retain) UILabel *counterLabel;
 -(void) updateCounter: (NSTimer *) counter;
 -(void) countdownTimer;

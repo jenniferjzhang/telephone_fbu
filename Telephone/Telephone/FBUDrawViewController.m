@@ -10,6 +10,7 @@
 
 @implementation FBUDrawViewController
 
+@synthesize timer;
 @synthesize counterLabel;
 
 int seconds;
@@ -24,18 +25,17 @@ int secondsRemaining;
 
 -(void)countdownTimer
 {
-    timer = [NSTimer timerWithTimeInterval:10 target:(id) counterLabel selector:@selector(viewDidLoad) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:10.0
+                                             target:self
+                                           selector:@selector(updateCounter:)
+                                           userInfo:nil
+                                            repeats:YES];
 }
 
 - (void) updateCounter:(NSTimer *)counter {
-    if (secondsRemaining > 0) {
-        secondsRemaining--;
-        seconds = 10-secondsRemaining;
-        counterLabel.text = [NSString stringWithFormat:@"%d", secondsRemaining];
-    }
-    else {
-        secondsRemaining = 0;
-    }
+    secondsRemaining--;
+    seconds = 10-secondsRemaining;
+    counterLabel.text = [NSString stringWithFormat:@"%d", secondsRemaining];
 }
 
 - (NSUInteger)supportedInterfaceOrientations
