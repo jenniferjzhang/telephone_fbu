@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FBUDrawViewController : NSObject
+@interface FBUDrawViewController : UIViewController
 
 @end
