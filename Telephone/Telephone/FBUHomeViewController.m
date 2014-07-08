@@ -10,11 +10,6 @@
 
 @implementation FBUHomeViewController
 
-- (void)loadView
-{
-    
-}
-
 
 - (NSUInteger)supportedInterfaceOrientations
 {

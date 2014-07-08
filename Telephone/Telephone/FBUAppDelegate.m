@@ -7,13 +7,12 @@
 //
 
 #import "FBUAppDelegate.h"
-#import "FBUHomeViewController.h"
 
 @implementation FBUAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    
     return YES;
 }
 
