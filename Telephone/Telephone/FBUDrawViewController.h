@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface FBUDrawViewController : UIViewController
-<<<<<<< HEAD
-=======
 {
     NSTimer *timer;
     IBOutlet UILabel *counterLabel;
@@ -20,6 +18,5 @@
 @property (nonatomic, retain) UILabel *counterLabel;
 -(void) updateCounter: (NSTimer *) counter;
 -(void) countdownTimer;
->>>>>>> master
 
 @end
