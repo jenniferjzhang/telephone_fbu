@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="nUz-uW-CfJ">
             <objects>
-                <viewController id="X3T-fu-kAp" sceneMemberID="viewController">
+                <viewController id="X3T-fu-kAp" customClass="FBUHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vus-c1-pxv"/>
                         <viewControllerLayoutGuide type="bottom" id="lBe-De-njI"/>
@@ -42,6 +42,9 @@
                                 <state key="normal" title="start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gr1-It-wp0" kind="modal" id="UZ2-qr-A7C"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sr4-mV-th7">
                                 <rect key="frame" x="498" y="250" width="70" height="70"/>
@@ -62,6 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lor-F0-R7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-44" y="243"/>
         </scene>
         <!--Draw View Controller-->
@@ -122,13 +126,49 @@
                             <constraint firstAttribute="centerY" secondItem="VSI-6z-KT7" secondAttribute="centerY" id="NDb-76-vgR"/>
                             <constraint firstAttribute="centerX" secondItem="VSI-6z-KT7" secondAttribute="centerX" id="bBC-6I-3FC"/>
                         </constraints>
+=======
+            <point key="canvasLocation" x="-113" y="142"/>
+        </scene>
+        <!--Word View Controller-->
+        <scene sceneID="1W6-Ds-XcT">
+            <objects>
+                <viewController id="gr1-It-wp0" customClass="FBUWordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8YM-dD-oYK"/>
+                        <viewControllerLayoutGuide type="bottom" id="sUL-3w-xq6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z4c-6Z-gdO">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcc-tM-Hpq">
+                                <rect key="frame" x="156" y="125" width="257" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIMER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afQ-4Q-bI8">
+                                <rect key="frame" x="493" y="258" width="75" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+>>>>>>> master
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
+<<<<<<< HEAD
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBv-Iy-Dfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="695" y="114"/>
+=======
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kW-2N-HZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="142"/>
+>>>>>>> master
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
