@@ -19,13 +19,8 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-
-    textField.text = @"";
-    NSLog(@"%@", textField.text);
     [textField resignFirstResponder];
-    
     return YES;
 }
-
 
 @end
