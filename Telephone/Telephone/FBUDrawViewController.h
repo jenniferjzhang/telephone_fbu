@@ -19,6 +19,7 @@
     CGFloat brush;
     BOOL mouseSwiped;
 }
+@property (nonatomic, retain) UIImage *lastImage;
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet FBUDrawView *drawPane;
 @property (nonatomic, retain) NSTimer *timer;

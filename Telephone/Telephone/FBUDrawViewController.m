@@ -9,11 +9,6 @@
 #import "FBUDrawViewController.h"
 #import "FBUDrawView.h"
 
-@interface FBUDrawViewController ()
-
-@property (nonatomic, retain) UIImage *lastImage;
-
-@end
 @implementation FBUDrawViewController
 
 @synthesize timer;

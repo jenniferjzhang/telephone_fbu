@@ -10,4 +10,14 @@
 
 @implementation FBUYourTurnViewController
 
+- (IBAction)viewDrawing:(id)sender {
+    [UIView animateKeyframesWithDuration:1.0
+                                   delay:0
+                                 options:UIViewAnimationCurveEaseInOut
+                              animations:^{
+                                  self.yourTurnLabel.center = CGPointMake(self.view.center.x, 50);
+                                
+                              }completion:NULL];
+}
+
 @end
