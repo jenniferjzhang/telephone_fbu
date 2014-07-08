@@ -15,7 +15,6 @@
 @synthesize timerLabel;
 
 int secondsRemaining;
-
 -(void)viewDidLoad {
     [super viewDidLoad];
     
@@ -59,6 +58,7 @@ int secondsRemaining;
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    NSLog(@"Touch began");
     mouseSwiped = NO;
     UITouch *touch = [touches anyObject];
     lastPoint = [touch locationInView:self.view];
@@ -67,6 +67,7 @@ int secondsRemaining;
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     //Get the location of the touch
+    NSLog(@"Touch moved");
     mouseSwiped = YES;
     UITouch *touch = [touches anyObject];
     CGPoint currentPoint = [touch locationInView:self.view];
@@ -105,6 +106,8 @@ int secondsRemaining;
         self.drawPane.image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
+    self.seeImage.image = self.drawPane.image;
+    NSLog(@"Touch ended with picture %@", self.drawPane.image);
 }
 
 @end
