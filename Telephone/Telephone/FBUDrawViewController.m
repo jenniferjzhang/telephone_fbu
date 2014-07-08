@@ -43,5 +43,8 @@ int secondsRemaining;
     //On all devices, we only support landscape left or right
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
+- (IBAction)doneDrawing:(id)sender {
+    
+}
 
 @end
