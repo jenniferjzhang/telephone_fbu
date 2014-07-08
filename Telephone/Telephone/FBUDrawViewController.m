@@ -9,6 +9,11 @@
 #import "FBUDrawViewController.h"
 #import "FBUDrawView.h"
 
+@interface FBUDrawViewController ()
+
+@property (nonatomic, retain) UIImage *lastImage;
+
+@end
 @implementation FBUDrawViewController
 
 @synthesize timer;
@@ -106,6 +111,7 @@ int secondsRemaining;
         self.seeImage.image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
+    self.lastImage = self.seeImage.image;
     NSLog(@"Touch ended with picture %@", self.seeImage.image);
 }
 
