@@ -19,6 +19,7 @@
 		D24FDEDF196B752D00BC3992 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24FDEC7196B752D00BC3992 /* UIKit.framework */; };
 		D24FDEE7196B752D00BC3992 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D24FDEE5196B752D00BC3992 /* InfoPlist.strings */; };
 		D24FDEE9196B752D00BC3992 /* TelephoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEE8196B752D00BC3992 /* TelephoneTests.m */; };
+		D24FDEF4196B77F600BC3992 /* FBUDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		D24FDEE4196B752D00BC3992 /* TelephoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TelephoneTests-Info.plist"; sourceTree = "<group>"; };
 		D24FDEE6196B752D00BC3992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D24FDEE8196B752D00BC3992 /* TelephoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelephoneTests.m; sourceTree = "<group>"; };
+		D24FDEF2196B77F600BC3992 /* FBUDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUDrawViewController.h; sourceTree = "<group>"; };
+		D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUDrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				D24FDED2196B752D00BC3992 /* FBUAppDelegate.h */,
 				D24FDED3196B752D00BC3992 /* FBUAppDelegate.m */,
+				D24FDEF2196B77F600BC3992 /* FBUDrawViewController.h */,
+				D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */,
 				D24FDED5196B752D00BC3992 /* Images.xcassets */,
 				D24FDECA196B752D00BC3992 /* Supporting Files */,
 			);
@@ -242,6 +247,7 @@
 			files = (
 				D24FDED4196B752D00BC3992 /* FBUAppDelegate.m in Sources */,
 				D24FDED0196B752D00BC3992 /* main.m in Sources */,
+				D24FDEF4196B77F600BC3992 /* FBUDrawViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +444,7 @@
 				D24FDEEE196B752D00BC3992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D24FDEEF196B752D00BC3992 /* Build configuration list for PBXNativeTarget "TelephoneTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				D24FDEF1196B752D00BC3992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
