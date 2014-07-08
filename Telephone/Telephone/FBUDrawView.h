@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FBUDrawView : UIView
+@property (nonatomic, retain) UIImage *image;
 
 @end
