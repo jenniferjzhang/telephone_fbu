@@ -10,7 +10,6 @@
 
 @implementation FBUHomeViewController
 
-
 - (NSUInteger)supportedInterfaceOrientations
 {
     //On all devices, we only support landscape left or right

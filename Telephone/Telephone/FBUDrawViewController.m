@@ -8,6 +8,7 @@
 
 #import "FBUDrawViewController.h"
 #import "FBUDrawView.h"
+#import "FBUYourTurnViewController.h"
 
 @implementation FBUDrawViewController
 
@@ -26,7 +27,7 @@ int secondsRemaining;
     blue = 0.0;
     brush = 10.0;
     opacity = 1.0;
-    
+
     
 }
 
@@ -43,8 +44,13 @@ int secondsRemaining;
     if (secondsRemaining > 0) {
         secondsRemaining--;
         timerLabel.text = [NSString stringWithFormat:@"%d seconds left", secondsRemaining];
-    }
     
+    }
+
+    if (secondsRemaining == 0) {
+        [self performSegueWithIdentifier:@"yourTurnSegue" sender:self];
+        secondsRemaining = -1;
+    }
 }
 
 - (NSUInteger)supportedInterfaceOrientations
@@ -52,6 +58,7 @@ int secondsRemaining;
     //On all devices, we only support landscape left or right
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
+
 - (IBAction)doneDrawing:(id)sender {
     
 }

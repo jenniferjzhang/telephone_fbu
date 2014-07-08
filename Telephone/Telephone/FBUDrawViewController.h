@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet FBUDrawView *drawPane;
 @property (nonatomic, retain) NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UIImageView *seeImage;
+@property (copy, nonatomic) void (^actionBlock)(void);
 -(void) updateCounter;
 -(void) countdownTimer;
 
