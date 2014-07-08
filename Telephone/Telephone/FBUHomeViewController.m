@@ -10,10 +10,27 @@
 
 @implementation FBUHomeViewController
 
+- (void)loadView
+{
+    
+}
+
+
 - (NSUInteger)supportedInterfaceOrientations
 {
     //On all devices, we only support landscape left or right
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+
+    textField.text = @"";
+    NSLog(@"%@", textField.text);
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 
 @end
