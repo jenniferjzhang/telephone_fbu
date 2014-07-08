@@ -43,7 +43,7 @@ int secondsRemaining;
 - (void) updateCounter {
     if (secondsRemaining > 0) {
         secondsRemaining--;
-        timerLabel.text = [NSString stringWithFormat:@"%d", secondsRemaining];
+        timerLabel.text = [NSString stringWithFormat:@"%d seconds left", secondsRemaining];
     }
     
 }
