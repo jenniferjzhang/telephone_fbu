@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0191F94196C4754005D92EA /* FBUDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0191F93196C4754005D92EA /* FBUDrawView.m */; };
 		D24FDEC4196B752D00BC3992 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24FDEC3196B752D00BC3992 /* Foundation.framework */; };
 		D24FDEC6196B752D00BC3992 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24FDEC5196B752D00BC3992 /* CoreGraphics.framework */; };
 		D24FDEC8196B752D00BC3992 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24FDEC7196B752D00BC3992 /* UIKit.framework */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B0191F92196C4754005D92EA /* FBUDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUDrawView.h; sourceTree = "<group>"; };
+		B0191F93196C4754005D92EA /* FBUDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUDrawView.m; sourceTree = "<group>"; };
 		D24FDEC0196B752D00BC3992 /* Telephone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telephone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24FDEC3196B752D00BC3992 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D24FDEC5196B752D00BC3992 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +117,8 @@
 				D24FDED3196B752D00BC3992 /* FBUAppDelegate.m */,
 				D24FDEF2196B77F600BC3992 /* FBUDrawViewController.h */,
 				D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */,
+				B0191F92196C4754005D92EA /* FBUDrawView.h */,
+				B0191F93196C4754005D92EA /* FBUDrawView.m */,
 				D24FDED5196B752D00BC3992 /* Images.xcassets */,
 				D24FDECA196B752D00BC3992 /* Supporting Files */,
 			);
@@ -247,6 +252,7 @@
 			files = (
 				D24FDED4196B752D00BC3992 /* FBUAppDelegate.m in Sources */,
 				D24FDED0196B752D00BC3992 /* main.m in Sources */,
+				B0191F94196C4754005D92EA /* FBUDrawView.m in Sources */,
 				D24FDEF4196B77F600BC3992 /* FBUDrawViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
