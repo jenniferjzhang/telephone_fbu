@@ -16,6 +16,7 @@
 
 @property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, retain) UILabel *counterLabel;
+//@property (nonatomic, weak) IBOutlet FBUDrawView *label;
 -(void) updateCounter;
 -(void) countdownTimer;
 
