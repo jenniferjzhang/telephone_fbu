@@ -23,6 +23,11 @@
     return YES;
 }
 
+- (IBAction)backgroundTapped:(id)sender
+{
+    [self.view endEditing:YES];
+}
+
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
