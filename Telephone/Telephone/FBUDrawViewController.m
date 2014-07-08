@@ -74,7 +74,7 @@ int secondsRemaining;
     
     //Draw the tiny section of line
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [self.drawPane.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    [self.seeImage.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
     CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), currentPoint.x, currentPoint.y);
     CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
@@ -84,8 +84,8 @@ int secondsRemaining;
     
     //Set the image in the draw view to be the image
     CGContextStrokePath(UIGraphicsGetCurrentContext());
-    self.drawPane.image = UIGraphicsGetImageFromCurrentImageContext();
-    [self.drawPane setAlpha:opacity];
+    self.seeImage.image = UIGraphicsGetImageFromCurrentImageContext();
+    [self.seeImage setAlpha:opacity];
     UIGraphicsEndImageContext();
     
     lastPoint = currentPoint;
@@ -96,18 +96,17 @@ int secondsRemaining;
 {
     if (!mouseSwiped) {
         UIGraphicsBeginImageContext(self.view.frame.size);
-        [self.drawPane.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        [self.seeImage.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
         CGContextSetLineWidth(UIGraphicsGetCurrentContext(), brush);
         CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), red, green, blue, 1.0);
         CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
         CGContextFlush(UIGraphicsGetCurrentContext());
-        self.drawPane.image = UIGraphicsGetImageFromCurrentImageContext();
+        self.seeImage.image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
     }
-    self.seeImage.image = self.drawPane.image;
-    NSLog(@"Touch ended with picture %@", self.drawPane.image);
+    NSLog(@"Touch ended with picture %@", self.seeImage.image);
 }
 
 @end
