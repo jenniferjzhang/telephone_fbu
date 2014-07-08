@@ -23,6 +23,7 @@
 		D24FDEF4196B77F600BC3992 /* FBUDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */; };
 		D24FDEF6196C4E5800BC3992 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24FDEF5196C4E5800BC3992 /* Storyboard.storyboard */; };
 		D24FDEF9196C501200BC3992 /* FBUHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEF8196C501200BC3992 /* FBUHomeViewController.m */; };
+		D24FDEFC196C5FCC00BC3992 /* FBUWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEFB196C5FCC00BC3992 /* FBUWordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		D24FDEF5196C4E5800BC3992 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		D24FDEF7196C501200BC3992 /* FBUHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUHomeViewController.h; sourceTree = "<group>"; };
 		D24FDEF8196C501200BC3992 /* FBUHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUHomeViewController.m; sourceTree = "<group>"; };
+		D24FDEFA196C5FCC00BC3992 /* FBUWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUWordViewController.h; sourceTree = "<group>"; };
+		D24FDEFB196C5FCC00BC3992 /* FBUWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUWordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				D24FDEF5196C4E5800BC3992 /* Storyboard.storyboard */,
 				D24FDEF7196C501200BC3992 /* FBUHomeViewController.h */,
 				D24FDEF8196C501200BC3992 /* FBUHomeViewController.m */,
+				D24FDEFA196C5FCC00BC3992 /* FBUWordViewController.h */,
+				D24FDEFB196C5FCC00BC3992 /* FBUWordViewController.m */,
 				D24FDEF2196B77F600BC3992 /* FBUDrawViewController.h */,
 				D24FDEF3196B77F600BC3992 /* FBUDrawViewController.m */,
 				B0191F92196C4754005D92EA /* FBUDrawView.h */,
@@ -261,6 +266,7 @@
 			files = (
 				D24FDED4196B752D00BC3992 /* FBUAppDelegate.m in Sources */,
 				D24FDED0196B752D00BC3992 /* main.m in Sources */,
+				D24FDEFC196C5FCC00BC3992 /* FBUWordViewController.m in Sources */,
 				D24FDEF9196C501200BC3992 /* FBUHomeViewController.m in Sources */,
 				B0191F94196C4754005D92EA /* FBUDrawView.m in Sources */,
 				D24FDEF4196B77F600BC3992 /* FBUDrawViewController.m in Sources */,
