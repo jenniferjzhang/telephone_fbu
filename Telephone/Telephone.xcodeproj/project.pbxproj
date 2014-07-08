@@ -24,6 +24,7 @@
 		D24FDEF9196C501200BC3992 /* FBUHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEF8196C501200BC3992 /* FBUHomeViewController.m */; };
 		D24FDEFC196C5FCC00BC3992 /* FBUWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDEFB196C5FCC00BC3992 /* FBUWordViewController.m */; };
 		D24FDEFE196C69B500BC3992 /* Telephone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24FDEFD196C69B500BC3992 /* Telephone.storyboard */; };
+		D24FDF01196CA96000BC3992 /* FBUYourTurnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FDF00196CA96000BC3992 /* FBUYourTurnViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		D24FDEFA196C5FCC00BC3992 /* FBUWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUWordViewController.h; sourceTree = "<group>"; };
 		D24FDEFB196C5FCC00BC3992 /* FBUWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUWordViewController.m; sourceTree = "<group>"; };
 		D24FDEFD196C69B500BC3992 /* Telephone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Telephone.storyboard; sourceTree = "<group>"; };
+		D24FDEFF196CA96000BC3992 /* FBUYourTurnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBUYourTurnViewController.h; sourceTree = "<group>"; };
+		D24FDF00196CA96000BC3992 /* FBUYourTurnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBUYourTurnViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				D24FDED3196B752D00BC3992 /* FBUAppDelegate.m */,
 				D24FDEF7196C501200BC3992 /* FBUHomeViewController.h */,
 				D24FDEF8196C501200BC3992 /* FBUHomeViewController.m */,
+				D24FDEFF196CA96000BC3992 /* FBUYourTurnViewController.h */,
+				D24FDF00196CA96000BC3992 /* FBUYourTurnViewController.m */,
 				D24FDEFA196C5FCC00BC3992 /* FBUWordViewController.h */,
 				D24FDEFB196C5FCC00BC3992 /* FBUWordViewController.m */,
 				D24FDEF2196B77F600BC3992 /* FBUDrawViewController.h */,
@@ -268,6 +273,7 @@
 				D24FDED0196B752D00BC3992 /* main.m in Sources */,
 				D24FDEFC196C5FCC00BC3992 /* FBUWordViewController.m in Sources */,
 				D24FDEF9196C501200BC3992 /* FBUHomeViewController.m in Sources */,
+				D24FDF01196CA96000BC3992 /* FBUYourTurnViewController.m in Sources */,
 				B0191F94196C4754005D92EA /* FBUDrawView.m in Sources */,
 				D24FDEF4196B77F600BC3992 /* FBUDrawViewController.m in Sources */,
 			);
