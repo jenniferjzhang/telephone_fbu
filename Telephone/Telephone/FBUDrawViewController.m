@@ -139,11 +139,11 @@ unsigned long roundNumber = 0;
     NSLog(@"Touch ended with picture %@", self.seeImage.image);
 }
 
--(void)doubleTap:(UIGestureRecognizer *)gr
-{
-    self.seeImage = nil;
-    self.lastImage = nil;
-    [[FBUImageStore sharedStore] deleteImageForKey:@"lastImage"];
+- (IBAction)clearScreen:(id)sender {
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    self.seeImage.image = UIGraphicsGetImageFromCurrentImageContext();
+    self.lastImage = self.seeImage.image;
+    UIGraphicsEndImageContext();
 }
 
 @end
