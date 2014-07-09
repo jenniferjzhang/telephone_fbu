@@ -10,6 +10,7 @@
 #import "FBUDrawView.h"
 #import "FBUYourTurnViewController.h"
 #import "FBUImageStore.h"
+#import "FBURoundCounter.h"
 
 @implementation FBUDrawViewController
 
@@ -17,6 +18,7 @@
 @synthesize timerLabel;
 
 int secondsRemaining;
+unsigned long roundNumber = 1;
 -(void)viewDidLoad {
     [super viewDidLoad];
     
@@ -31,6 +33,12 @@ int secondsRemaining;
     
 
     
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    roundNumber += 1;
+    self.roundLabel.text = [NSString stringWithFormat:@"Round: %lu", (unsigned long) roundNumber];
 }
 
 -(void)countdownTimer
@@ -51,7 +59,7 @@ int secondsRemaining;
 
     if (secondsRemaining == 0) {
         [self performSegueWithIdentifier:@"yourTurnSegue" sender:self];
-        secondsRemaining = -1;
+        [timer invalidate];
         FBUImageStore *pastImages = [FBUImageStore sharedStore];
         if (self.lastImage) {
             [pastImages setImage:self.lastImage forKey:@"lastImage"];
@@ -66,7 +74,7 @@ int secondsRemaining;
 }
 
 - (IBAction)doneDrawing:(id)sender {
-    secondsRemaining = -1;
+    [timer invalidate];
     FBUImageStore *pastImages = [FBUImageStore sharedStore];
     if (self.lastImage) {
         [pastImages setImage:self.lastImage forKey:@"lastImage"];

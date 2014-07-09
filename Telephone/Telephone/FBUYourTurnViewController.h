@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *viewDrawingButton;
 @property (weak, nonatomic) IBOutlet UILabel *yourTurnLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 
 
 @end

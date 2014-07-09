@@ -25,6 +25,7 @@
 @property (nonatomic, retain) NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UIImageView *seeImage;
 @property (copy, nonatomic) void (^actionBlock)(void);
+@property (weak, nonatomic) IBOutlet UILabel *roundLabel;
 -(void) updateCounter;
 -(void) countdownTimer;
 

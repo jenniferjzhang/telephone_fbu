@@ -175,6 +175,13 @@
                                 <rect key="frame" x="115" y="56" width="339" height="208"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCh-xH-hFd">
+                                <rect key="frame" x="20" y="272" width="129" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -183,8 +190,10 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="pastImage" destination="lbi-GV-BQb" id="qFj-T5-SEQ"/>
+                        <outlet property="timerLabel" destination="vCh-xH-hFd" id="tmV-Jc-SVk"/>
                         <outlet property="viewDrawingButton" destination="8We-2y-7gC" id="0zW-7M-LsL"/>
                         <outlet property="yourTurnLabel" destination="J1k-FA-p1w" id="h1S-ba-z9c"/>
+                        <segue destination="AE9-Sh-Esx" kind="push" identifier="nextDraw" id="1CQ-z7-cgf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSZ-ye-b9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -215,7 +224,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ROUND:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-Jw-B0J">
-                                        <rect key="frame" x="20" y="31" width="77" height="52"/>
+                                        <rect key="frame" x="20" y="31" width="130" height="52"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.81572645030000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -250,6 +259,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="drawPane" destination="hJe-no-NAh" id="80b-MA-Aip"/>
+                        <outlet property="roundLabel" destination="pdf-Jw-B0J" id="hLc-nQ-iO9"/>
                         <outlet property="seeImage" destination="CCF-Yn-Ywn" id="dKt-pQ-ha0"/>
                         <outlet property="timerLabel" destination="eQX-zL-d9H" id="FsH-Tt-ChK"/>
                     </connections>
@@ -441,5 +451,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="tBb-4r-02w"/>
+        <segue reference="1CQ-z7-cgf"/>
     </inferredMetricsTieBreakers>
 </document>
