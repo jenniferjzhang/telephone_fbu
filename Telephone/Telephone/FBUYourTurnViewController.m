@@ -8,6 +8,7 @@
 
 #import "FBUYourTurnViewController.h"
 #import "FBUImageStore.h"
+#import "FBURoundCounter.h"
 
 @interface FBUYourTurnViewController ()
 
@@ -25,6 +26,7 @@ int secondsRemaining ;
     secondsRemaining = 5;
     
     self.pastImage.image = [[FBUImageStore sharedStore] imageForKey:@"lastImage"];
+    
 }
 
 -(void)countdownTimer
@@ -44,8 +46,15 @@ int secondsRemaining ;
     }
     
     if (secondsRemaining == 0) {
-        [self performSegueWithIdentifier:@"nextDraw" sender:self];
-        [self.timer invalidate];
+        if ([FBURoundCounter sharedCounter].roundCount != 0) {
+            [self performSegueWithIdentifier:@"nextDraw" sender:self];
+            [self.timer invalidate];
+        }else {
+            [self performSegueWithIdentifier:@"guessView" sender:self];
+            [self.timer invalidate];
+        }
+        
+        
         
         }
 }

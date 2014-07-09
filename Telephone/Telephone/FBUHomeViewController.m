@@ -31,7 +31,7 @@
 
 -(void)textFieldDidEndEditing:(UITextField *)textField
 {
-    [[FBURoundCounter sharedCounter] setRoundCount:[textField.text integerValue]];
+    [[FBURoundCounter sharedCounter] setRoundCount:[textField.text integerValue] - 1];
     if ([FBURoundCounter sharedCounter].roundCount != 0) {
         [self.startButton setEnabled:YES];
     }

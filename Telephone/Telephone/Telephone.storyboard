@@ -194,6 +194,7 @@
                         <outlet property="viewDrawingButton" destination="8We-2y-7gC" id="0zW-7M-LsL"/>
                         <outlet property="yourTurnLabel" destination="J1k-FA-p1w" id="h1S-ba-z9c"/>
                         <segue destination="AE9-Sh-Esx" kind="push" identifier="nextDraw" id="1CQ-z7-cgf"/>
+                        <segue destination="zwg-gx-Pgg" kind="push" identifier="guessView" id="klA-CS-j3A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSZ-ye-b9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
