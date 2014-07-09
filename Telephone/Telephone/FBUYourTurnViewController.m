@@ -36,6 +36,7 @@
                               }completion:^(BOOL completed){
                                   if (completed == YES) {
                                       [self.pastImage setHidden:NO];
+                                      [[FBUImageStore sharedStore] deleteImageForKey:@"lastImage"];
                                   }
                                   
                               }];

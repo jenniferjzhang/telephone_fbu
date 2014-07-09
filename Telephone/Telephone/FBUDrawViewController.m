@@ -53,8 +53,9 @@ int secondsRemaining;
         [self performSegueWithIdentifier:@"yourTurnSegue" sender:self];
         secondsRemaining = -1;
         FBUImageStore *pastImages = [FBUImageStore sharedStore];
-        [pastImages setImage:self.lastImage forKey:@"lastImage"];
-        
+        if (self.lastImage) {
+            [pastImages setImage:self.lastImage forKey:@"lastImage"];
+        }
     }
 }
 
@@ -67,8 +68,9 @@ int secondsRemaining;
 - (IBAction)doneDrawing:(id)sender {
     secondsRemaining = -1;
     FBUImageStore *pastImages = [FBUImageStore sharedStore];
-    [pastImages setImage:self.lastImage forKey:@"lastImage"];
-    
+    if (self.lastImage) {
+        [pastImages setImage:self.lastImage forKey:@"lastImage"];
+    }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

@@ -14,16 +14,22 @@
 -(instancetype)init
 {
     [NSException raise:@"Singleton"
-                format:@"Use +[FBUImageStore sharedStore]"];
+                format:@"Use +[FBURoundCounter sharedCounter"];
     return nil;
 }
 
+-(instancetype)initPrivate
+{
+    self = [super init];
+    
+    return self;
+}
 +(instancetype)sharedCounter{
     static FBURoundCounter *sharedCounter;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedCounter= [super init];
+        sharedCounter= [[super alloc] initPrivate];
     });
     return sharedCounter;
 }
