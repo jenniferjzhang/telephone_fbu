@@ -133,6 +133,7 @@
 		D24FDEC9196B752D00BC3992 /* Telephone */ = {
 			isa = PBXGroup;
 			children = (
+				D2752A62196DDE2E0020D3A6 /* iPad */,
 				D24FDEFD196C69B500BC3992 /* Telephone.storyboard */,
 				D24FDED2196B752D00BC3992 /* FBUAppDelegate.h */,
 				D24FDED3196B752D00BC3992 /* FBUAppDelegate.m */,
@@ -185,6 +186,13 @@
 				D24FDEE5196B752D00BC3992 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2752A62196DDE2E0020D3A6 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,7 +421,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Telephone/Telephone-Prefix.pch";
 				INFOPLIST_FILE = "Telephone/Telephone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -426,7 +436,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Telephone/Telephone-Prefix.pch";
 				INFOPLIST_FILE = "Telephone/Telephone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
