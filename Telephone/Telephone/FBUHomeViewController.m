@@ -15,6 +15,7 @@
 {
     [super viewDidLoad];
     [self.startButton setEnabled:NO];
+
 }
 
 - (NSUInteger)supportedInterfaceOrientations

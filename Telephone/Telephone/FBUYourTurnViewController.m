@@ -24,7 +24,6 @@ int secondsRemaining ;
 {
     [super viewWillAppear:YES];
     secondsRemaining = 5;
-    
     [self.viewDrawingButton setHidden:NO];
     [self.viewDrawingButton setEnabled:YES];
     self.pastImage.image = [[FBUImageStore sharedStore] imageForKey:@"lastImage"];

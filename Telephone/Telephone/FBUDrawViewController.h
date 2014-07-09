@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *seeImage;
 @property (copy, nonatomic) void (^actionBlock)(void);
 @property (weak, nonatomic) IBOutlet UILabel *roundLabel;
+@property (weak, nonatomic) UIColor *color;
 -(void) updateCounter;
 -(void) countdownTimer;
 
