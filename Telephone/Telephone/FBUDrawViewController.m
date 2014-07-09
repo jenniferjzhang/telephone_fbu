@@ -22,7 +22,7 @@ unsigned long roundNumber = 0;
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    secondsRemaining = 11;
+    secondsRemaining = 16;
     [self countdownTimer];
     
     red = 0.0;

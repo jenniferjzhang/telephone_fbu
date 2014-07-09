@@ -23,7 +23,7 @@ int secondsRemaining ;
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
-    secondsRemaining = 5;
+    secondsRemaining = 4;
     
     [self.viewDrawingButton setHidden:NO];
     [self.viewDrawingButton setEnabled:YES];
