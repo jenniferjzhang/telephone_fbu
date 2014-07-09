@@ -11,34 +11,6 @@
 
 @implementation FBUHomeViewController
 
--(void)viewDidAppear:(BOOL)animated
-{
-    CGPoint transfer = CGPointMake(self.view.center.x, 60);
-    NSLog(@"%f, %f", self.titleLabel.center.x, self.titleLabel.center.y);
-    [UIView animateKeyframesWithDuration:1.0
-                                   delay:1.0
-                                 options:UIViewAnimationOptionCurveEaseIn
-                              animations:^{
-                                  
-                                  self.titleLabel.center = transfer;
-                                  
-                                  
-                              }completion:^(BOOL completed){
-                                  if (completed == YES) {
-                                      [self.playersLabel setHidden:NO];
-                                      [self.numberOfPlayers setHidden:NO];
-                                      [self.startButton setHidden:NO];
-                                      [self.startButton setEnabled:NO];
-                                      [self.instructionsImage setHidden:NO];
-                                      [self.instructionsButton setEnabled:YES];
-                                      [self.instructionsButton setHidden:NO];
-                                      NSLog(@"%f, %f", self.titleLabel.center.x, self.titleLabel.center.y);
-                                  }
-                              }];
-    
-    NSLog(@"View did appear");
-}
-
 -(void)viewDidLoad
 {
     [super viewDidLoad];
