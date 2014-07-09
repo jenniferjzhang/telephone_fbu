@@ -73,6 +73,50 @@ unsigned long roundNumber = 0;
     //On all devices, we only support landscape left or right
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
+- (IBAction)pencilPressed:(id)sender {
+    UIButton *pressedButton = (UIButton *)sender;
+    
+    switch(pressedButton.tag)
+    {
+    case 0:
+        red = 0.0/255.0;
+        green = 0.0/255.0;
+        blue = 0.0/255.0;
+        break;
+    case 1:
+        red = 255.0/255.0;
+        green = 0/255.0;
+        blue = 0/255.0;
+        break;
+    case 2:
+        red = 255.0/255.0;
+        green = 102.0/255.0;
+        blue = 0.0/255.0;
+        break;
+    case 3:
+        red = 255.0/255.0;
+        green = 240.0/255.0;
+        blue = 0.0/255.0;
+        break;
+    case 4:
+        red = 0.0/255.0;
+        green = 250.0/255.0;
+        blue = 0.0/255.0;
+        break;
+    case 5:
+        red = 51.0/255.0;
+        green = 102.0/255.0;
+        blue = 153.0/255.0;
+        break;
+    case 6:
+        red = 102.0/255.0;
+        green = 0.0/255.0;
+        blue = 153.0/255.0;
+        break;
+    }
+}
+
+
 
 - (IBAction)doneDrawing:(id)sender {
     [timer invalidate];
