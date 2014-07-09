@@ -51,7 +51,7 @@ int secondsRemaining ;
     }
     
     if (secondsRemaining == 0) {
-        if ([FBURoundCounter sharedCounter].roundCount != 0) {
+        if ([FBURoundCounter sharedCounter].roundCount != 1) {
             [self performSegueWithIdentifier:@"nextDraw" sender:self];
             [self.timer invalidate];
         }else {

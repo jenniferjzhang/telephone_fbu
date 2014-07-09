@@ -37,7 +37,7 @@
 - (void)generateWord
 {
     NSArray *wordDB = @[@"Hello Kitty", @"Facebook", @"Breaking Bad", @"TJ", @"Big Nerd Ranch", @"Pikachu", @"Democracy", @"Friendship",
-                        @"Woody", @"Party"];
+                        @"Woody", @"Party", @"UFO"];
     
     NSString *keyword = wordDB[arc4random() % wordDB.count];
     [[FBURoundCounter sharedCounter] setKeyWord:keyword];
