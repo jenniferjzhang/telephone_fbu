@@ -33,8 +33,13 @@
                                   
                                 self.yourTurnLabel.center = CGPointMake(self.view.center.x, 50);
                                 
-                              }completion:NULL];
-    [self.pastImage setHidden:NO];
+                              }completion:^(BOOL completed){
+                                  if (completed == YES) {
+                                      [self.pastImage setHidden:NO];
+                                  }
+                                  
+                              }];
+    
 }
 
 @end
