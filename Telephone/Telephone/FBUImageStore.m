@@ -19,7 +19,7 @@
 -(instancetype)init
 {
     [NSException raise:@"Singleton"
-                format:@"Use +[GMCImageStore sharedStore]"];
+                format:@"Use +[FBUImageStore sharedStore]"];
     return nil;
 }
 
