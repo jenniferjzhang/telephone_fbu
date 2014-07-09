@@ -50,7 +50,6 @@
     if (self) {
         
         self.instructionsImage.image = [UIImage imageNamed:@"questionmark.png"];
-        
     }
     
     return self;
