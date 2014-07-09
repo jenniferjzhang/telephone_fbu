@@ -18,7 +18,7 @@
 @synthesize timerLabel;
 
 int secondsRemaining;
-unsigned long roundNumber = 1;
+unsigned long roundNumber = 0;
 -(void)viewDidLoad {
     [super viewDidLoad];
     
@@ -39,6 +39,7 @@ unsigned long roundNumber = 1;
 {
     roundNumber += 1;
     self.roundLabel.text = [NSString stringWithFormat:@"Round: %lu", (unsigned long) roundNumber];
+    [[FBURoundCounter sharedCounter] decreaseCounter];
 }
 
 -(void)countdownTimer
@@ -137,5 +138,6 @@ unsigned long roundNumber = 1;
     self.lastImage = self.seeImage.image;
     NSLog(@"Touch ended with picture %@", self.seeImage.image);
 }
+
 
 @end
