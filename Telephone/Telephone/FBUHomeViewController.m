@@ -13,13 +13,15 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    
+    CGPoint transfer = CGPointMake(self.view.center.x, 60);
+    NSLog(@"%f, %f", self.titleLabel.center.x, self.titleLabel.center.y);
     [UIView animateKeyframesWithDuration:1.0
                                    delay:1.0
                                  options:UIViewAnimationOptionCurveEaseIn
                               animations:^{
                                   
-                                  self.titleLabel.center = CGPointMake(self.view.center.x, 60);
+                                  self.titleLabel.center = transfer;
+                                  
                                   
                               }completion:^(BOOL completed){
                                   if (completed == YES) {
@@ -30,6 +32,7 @@
                                       [self.instructionsImage setHidden:NO];
                                       [self.instructionsButton setEnabled:YES];
                                       [self.instructionsButton setHidden:NO];
+                                      NSLog(@"%f, %f", self.titleLabel.center.x, self.titleLabel.center.y);
                                   }
                               }];
     
