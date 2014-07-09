@@ -7,6 +7,7 @@
 //
 
 #import "FBUDrawView.h"
+#import "FBUDrawViewController.h"
 
 @implementation FBUDrawView
 
@@ -16,6 +17,9 @@
     if (self) {
         self.image = nil;
     }
+    
+    
+    
     return self;
 }
 

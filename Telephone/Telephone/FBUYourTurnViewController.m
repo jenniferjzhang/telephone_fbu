@@ -25,6 +25,8 @@ int secondsRemaining ;
     [super viewWillAppear:YES];
     secondsRemaining = 5;
     
+    [self.viewDrawingButton setHidden:NO];
+    [self.viewDrawingButton setEnabled:YES];
     self.pastImage.image = [[FBUImageStore sharedStore] imageForKey:@"lastImage"];
     
 }
@@ -72,6 +74,10 @@ int secondsRemaining ;
                                       [self.pastImage setHidden:NO];
                                       [[FBUImageStore sharedStore] deleteImageForKey:@"lastImage"];
                                       [self countdownTimer];
+                                      
+                                      //Hide and disable button
+                                      [self.viewDrawingButton setEnabled:NO];
+                                      [self.viewDrawingButton setHidden:YES];
                                   }
                                   
                               }];
