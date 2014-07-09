@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSUInteger roundCount;
 @property (nonatomic) NSString *keyWord;
+@property (nonatomic) BOOL confirmation;
 
 +(instancetype)sharedCounter;
 

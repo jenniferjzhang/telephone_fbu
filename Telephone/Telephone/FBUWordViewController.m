@@ -26,7 +26,12 @@
         [self generateWord];
 
     }
-     self.wordLabel.text = [FBURoundCounter sharedCounter].keyWord;
+    self.wordLabel.text = [FBURoundCounter sharedCounter].keyWord;
+    if ([FBURoundCounter sharedCounter].confirmation == YES){
+        self.confirmationLabel.text = @"You're right!";
+    } else {
+        self.confirmationLabel.text = @"Sorry...";
+    }
 }
 
 - (void)generateWord

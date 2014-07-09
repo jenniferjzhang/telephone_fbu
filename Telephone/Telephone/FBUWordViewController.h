@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 @property (weak, nonatomic) IBOutlet UIButton *drawNowButton;
+@property (weak, nonatomic) IBOutlet UILabel *confirmationLabel;
 
 -(void)generateWord;
 

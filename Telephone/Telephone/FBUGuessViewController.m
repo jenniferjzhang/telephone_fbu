@@ -7,6 +7,7 @@
 //
 
 #import "FBUGuessViewController.h"
+#import "FBURoundCounter.h"
 
 @implementation FBUGuessViewController
 
@@ -16,5 +17,18 @@
     [textField resignFirstResponder];
     return YES;
 }
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    if ([[FBURoundCounter sharedCounter].keyWord caseInsensitiveCompare:self.guessTextField.text] == NSOrderedSame) {
+        
+        [FBURoundCounter sharedCounter].confirmation = YES;
+    } else {
+    
+    [FBURoundCounter sharedCounter].confirmation = NO;
+
+    }
+}
+
 
 @end
