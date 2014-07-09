@@ -7,6 +7,14 @@
 //
 
 #import "FBUYourTurnViewController.h"
+#import "FBUImageStore.h"
+
+@interface FBUYourTurnViewController ()
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *pastImage;
+
+@end
 
 @implementation FBUYourTurnViewController
 
@@ -16,6 +24,7 @@
                                  options:UIViewAnimationCurveEaseInOut
                               animations:^{
                                   self.yourTurnLabel.center = CGPointMake(self.view.center.x, 50);
+                                  [self.pastImage setHidden:NO];
                                 
                               }completion:NULL];
 }

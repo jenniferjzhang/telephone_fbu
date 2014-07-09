@@ -5,23 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>F54DDB16-96FF-4934-AE88-0C2684CBB57E</string>
-=======
-	<string>7F463704-C608-45C6-B11B-B30B8E91A9AE</string>
->>>>>>> 016d6117c17287d341fc5ca15049e8bd8a280697
+	<string>E53189C4-E35D-4732-9261-6BF6000583E5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Telephone</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>275D9AF1-4355-4A6D-966C-D0BB93FB352E</key>
+		<key>A318D335-F177-40CC-8333-CF9F48DFBFC7</key>
 		<string>https://github.com/jenniferjzhang/telephone_fbu.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Telephone/Telephone.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>275D9AF1-4355-4A6D-966C-D0BB93FB352E</key>
+		<key>A318D335-F177-40CC-8333-CF9F48DFBFC7</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -29,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>275D9AF1-4355-4A6D-966C-D0BB93FB352E</string>
+	<string>A318D335-F177-40CC-8333-CF9F48DFBFC7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>275D9AF1-4355-4A6D-966C-D0BB93FB352E</string>
+			<string>A318D335-F177-40CC-8333-CF9F48DFBFC7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>telephone_fbu</string>
 		</dict>

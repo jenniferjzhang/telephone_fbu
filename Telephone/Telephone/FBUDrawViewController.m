@@ -9,6 +9,7 @@
 #import "FBUDrawViewController.h"
 #import "FBUDrawView.h"
 #import "FBUYourTurnViewController.h"
+#import "FBUImageStore.h"
 
 @implementation FBUDrawViewController
 

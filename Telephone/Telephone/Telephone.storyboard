@@ -113,6 +113,10 @@
                                     <action selector="viewDrawing:" destination="Sft-sA-xMV" eventType="touchUpInside" id="jJW-vM-6xR"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbi-GV-BQb">
+                                <rect key="frame" x="137" y="61" width="304" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -120,6 +124,7 @@
                     <navigationItem key="navigationItem" id="k3k-VW-SDk"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="pastImage" destination="lbi-GV-BQb" id="qFj-T5-SEQ"/>
                         <outlet property="viewDrawingButton" destination="8We-2y-7gC" id="0zW-7M-LsL"/>
                         <outlet property="yourTurnLabel" destination="J1k-FA-p1w" id="h1S-ba-z9c"/>
                     </connections>
