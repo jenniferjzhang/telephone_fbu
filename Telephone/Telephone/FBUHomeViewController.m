@@ -11,12 +11,37 @@
 
 @implementation FBUHomeViewController
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    
+    [UIView animateKeyframesWithDuration:1.0
+                                   delay:1.0
+                                 options:UIViewAnimationOptionCurveEaseIn
+                              animations:^{
+                                  
+                                  self.titleLabel.center = CGPointMake(self.view.center.x, 60);
+                                  
+                              }completion:^(BOOL completed){
+                                  if (completed == YES) {
+                                      [self.playersLabel setHidden:NO];
+                                      [self.numberOfPlayers setHidden:NO];
+                                      [self.startButton setHidden:NO];
+                                      [self.startButton setEnabled:NO];
+                                      [self.instructionsImage setHidden:NO];
+                                      [self.instructionsButton setEnabled:YES];
+                                      [self.instructionsButton setHidden:NO];
+                                  }
+                              }];
+}
+
 -(void)viewDidLoad
 {
     [super viewDidLoad];
     [self.startButton setEnabled:NO];
 
 }
+    
+    
 
 - (NSUInteger)supportedInterfaceOrientations
 {
