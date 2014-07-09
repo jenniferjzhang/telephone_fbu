@@ -13,6 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 @property (weak, nonatomic) IBOutlet UIButton *drawNowButton;
 
--(NSString *)generateWord;
+-(void)generateWord;
 
 @end

@@ -14,7 +14,7 @@
 -(instancetype)init
 {
     [NSException raise:@"Singleton"
-                format:@"Use +[FBURoundCounter sharedCounter"];
+                format:@"Use +[FBURoundCounter sharedCounter]"];
     return nil;
 }
 
@@ -24,6 +24,7 @@
     
     return self;
 }
+
 +(instancetype)sharedCounter{
     static FBURoundCounter *sharedCounter;
     

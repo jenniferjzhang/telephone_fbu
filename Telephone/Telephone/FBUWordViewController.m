@@ -7,6 +7,7 @@
 //
 
 #import "FBUWordViewController.h"
+#import "FBURoundCounter.h"
 
 @implementation FBUWordViewController
 
@@ -19,16 +20,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.wordLabel.text = [self generateWord];
+
+    if (![FBURoundCounter sharedCounter].keyWord){
+        
+        [self generateWord];
+
+    }
+     self.wordLabel.text = [FBURoundCounter sharedCounter].keyWord;
 }
 
-- (NSString *)generateWord
+- (void)generateWord
 {
     NSArray *wordDB = @[@"Hello Kitty", @"Facebook", @"Breaking Bad", @"TJ", @"Big Nerd Ranch", @"Pikachu", @"Democracy", @"Friendship",
                         @"Woody", @"Party"];
     
-    return wordDB[arc4random() % wordDB.count];
+    NSString *keyword = wordDB[arc4random() % wordDB.count];
+    [[FBURoundCounter sharedCounter] setKeyWord:keyword];
+
 }
 
 @end

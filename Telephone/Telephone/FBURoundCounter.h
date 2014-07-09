@@ -11,6 +11,7 @@
 @interface FBURoundCounter : NSObject
 
 @property (nonatomic) NSUInteger roundCount;
+@property (nonatomic) NSString *keyWord;
 
 +(instancetype)sharedCounter;
 
