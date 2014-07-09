@@ -65,6 +65,7 @@ int secondsRemaining;
 }
 
 - (IBAction)doneDrawing:(id)sender {
+    secondsRemaining = -1;
     FBUImageStore *pastImages = [FBUImageStore sharedStore];
     [pastImages setImage:self.lastImage forKey:@"lastImage"];
     

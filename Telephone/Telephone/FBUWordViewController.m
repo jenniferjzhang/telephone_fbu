@@ -20,7 +20,8 @@
 {
     [super viewDidLoad];
     
-    NSArray *wordDB = @[@"Hello Kitty", @"Facebook", @"Breaking Bad", @"TJ", @"Big Nerd Ranch", @"Pikachu"];
+    NSArray *wordDB = @[@"Hello Kitty", @"Facebook", @"Breaking Bad", @"TJ", @"Big Nerd Ranch", @"Pikachu", @"Democracy", @"Friendship",
+                        @"Woody", @"Party"];
     
     self.wordLabel.text = wordDB[arc4random() % wordDB.count];
 }
