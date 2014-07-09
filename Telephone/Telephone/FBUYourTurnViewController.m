@@ -18,15 +18,23 @@
 
 @implementation FBUYourTurnViewController
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    
+    self.pastImage.image = [[FBUImageStore sharedStore] imageForKey:@"lastImage"];
+}
+
 - (IBAction)viewDrawing:(id)sender {
     [UIView animateKeyframesWithDuration:1.0
                                    delay:0
                                  options:UIViewAnimationCurveEaseInOut
                               animations:^{
-                                  self.yourTurnLabel.center = CGPointMake(self.view.center.x, 50);
-                                  [self.pastImage setHidden:NO];
+                                  
+                                self.yourTurnLabel.center = CGPointMake(self.view.center.x, 50);
                                 
                               }completion:NULL];
+    [self.pastImage setHidden:NO];
 }
 
 @end

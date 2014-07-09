@@ -28,6 +28,7 @@ int secondsRemaining;
     blue = 0.0;
     brush = 10.0;
     opacity = 1.0;
+    
 
     
 }
@@ -51,6 +52,9 @@ int secondsRemaining;
     if (secondsRemaining == 0) {
         [self performSegueWithIdentifier:@"yourTurnSegue" sender:self];
         secondsRemaining = -1;
+        FBUImageStore *pastImages = [FBUImageStore sharedStore];
+        [pastImages setImage:self.lastImage forKey:@"lastImage"];
+        
     }
 }
 
@@ -61,6 +65,8 @@ int secondsRemaining;
 }
 
 - (IBAction)doneDrawing:(id)sender {
+    FBUImageStore *pastImages = [FBUImageStore sharedStore];
+    [pastImages setImage:self.lastImage forKey:@"lastImage"];
     
 }
 

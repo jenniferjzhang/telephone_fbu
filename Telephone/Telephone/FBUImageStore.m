@@ -74,6 +74,28 @@
     [data writeToFile:imagePath atomically:YES];
 }
 
+-(UIImage *)imageForKey:(NSString *)key
+{
+    //If possible, get it from the dictionary
+    UIImage *result = self.dictionary[key];
+    
+    if (!result) {
+        NSString *imagePath = [self imagePathForKey:key];
+        
+        //Create a UIImage object from file
+        result = [UIImage imageWithContentsOfFile:imagePath];
+        
+        //If we found an image on the file system, place it into the cache
+        if (result) {
+            self.dictionary[key] = result;
+        } else {
+            NSLog(@"Error: unable to find %@", imagePath);
+        }
+    }
+    return result;
+}
+
+
 -(void)deleteImageForKey:(NSString *)key
 {
     if (!key) {
