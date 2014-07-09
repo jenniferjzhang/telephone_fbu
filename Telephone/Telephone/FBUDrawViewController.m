@@ -116,9 +116,12 @@ int secondsRemaining;
         CGContextSetLineWidth(UIGraphicsGetCurrentContext(), brush);
         CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), red, green, blue, 1.0);
         CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
-        CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
+        CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x + 1.0, lastPoint.y);
         CGContextFlush(UIGraphicsGetCurrentContext());
+        
+        CGContextStrokePath(UIGraphicsGetCurrentContext());
         self.seeImage.image = UIGraphicsGetImageFromCurrentImageContext();
+        [self.seeImage setAlpha:opacity];
         UIGraphicsEndImageContext();
     }
     self.lastImage = self.seeImage.image;
