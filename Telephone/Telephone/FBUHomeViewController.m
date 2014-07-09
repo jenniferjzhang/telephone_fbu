@@ -7,8 +7,15 @@
 //
 
 #import "FBUHomeViewController.h"
+#import "FBURoundCounter.h"
 
 @implementation FBUHomeViewController
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.startButton setEnabled:NO];
+}
 
 - (NSUInteger)supportedInterfaceOrientations
 {
@@ -20,6 +27,15 @@
 {
     [textField resignFirstResponder];
     return YES;
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [[FBURoundCounter sharedCounter] setRoundCount:[textField.text integerValue]];
+    if ([FBURoundCounter sharedCounter].roundCount != 0) {
+        [self.startButton setEnabled:YES];
+    }
+    NSLog(@"%lu", (unsigned long) [FBURoundCounter sharedCounter].roundCount);
 }
 
 - (IBAction)backgroundTapped:(id)sender
