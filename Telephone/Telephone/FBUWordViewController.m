@@ -20,10 +20,15 @@
 {
     [super viewDidLoad];
     
+    self.wordLabel.text = [self generateWord];
+}
+
+- (NSString *)generateWord
+{
     NSArray *wordDB = @[@"Hello Kitty", @"Facebook", @"Breaking Bad", @"TJ", @"Big Nerd Ranch", @"Pikachu", @"Democracy", @"Friendship",
                         @"Woody", @"Party"];
     
-    self.wordLabel.text = wordDB[arc4random() % wordDB.count];
+    return wordDB[arc4random() % wordDB.count];
 }
 
 @end
