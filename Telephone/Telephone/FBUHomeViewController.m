@@ -32,12 +32,15 @@
                                       [self.instructionsButton setHidden:NO];
                                   }
                               }];
+    
+    NSLog(@"View did appear");
 }
 
 -(void)viewDidLoad
 {
     [super viewDidLoad];
     [self.startButton setEnabled:NO];
+    NSLog(@"View did load");
 }
     
     

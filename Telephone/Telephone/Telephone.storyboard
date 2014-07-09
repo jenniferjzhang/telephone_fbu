@@ -76,8 +76,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TELEPHONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mc6-M9-KFd">
-                                <rect key="frame" x="113" y="114" width="342" height="92"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PICTOPHONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mc6-M9-KFd">
+                                <rect key="frame" x="113" y="114" width="353" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -257,6 +257,61 @@
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABz-dM-VTo">
+                                        <rect key="frame" x="255" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fJR-Xr-7FQ"/>
+                                            <constraint firstAttribute="width" constant="30" id="r6A-dF-Zfp"/>
+                                        </constraints>
+                                        <state key="normal" image="FFCC00">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR8-Id-cpg">
+                                        <rect key="frame" x="217" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="PaA-4d-awd"/>
+                                            <constraint firstAttribute="height" constant="30" id="tbd-p0-AVj"/>
+                                        </constraints>
+                                        <state key="normal" image="FF6600">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSz-0m-5Cr">
+                                        <rect key="frame" x="179" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="eir-4y-WHN"/>
+                                            <constraint firstAttribute="width" constant="30" id="jVt-vy-L3D"/>
+                                        </constraints>
+                                        <state key="normal" image="FF0000">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOG-M5-5IM">
+                                        <rect key="frame" x="369" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="PvS-vw-hX1"/>
+                                            <constraint firstAttribute="width" constant="30" id="dEP-zA-XeZ"/>
+                                        </constraints>
+                                        <state key="normal" image="660099">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhl-ff-hdb">
+                                        <rect key="frame" x="332" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="8xv-cC-f5K"/>
+                                            <constraint firstAttribute="height" constant="30" id="FrT-Fa-Pak"/>
+                                        </constraints>
+                                        <state key="normal" image="336699">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ED3-F0-RPp">
                                         <rect key="frame" x="20" y="270" width="89" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -269,6 +324,28 @@
                                         <connections>
                                             <action selector="clearScreen:" destination="AE9-Sh-Esx" eventType="touchUpInside" id="ad2-XQ-J8M"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym0-bM-blK">
+                                        <rect key="frame" x="141" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ClL-X0-FfZ"/>
+                                            <constraint firstAttribute="width" constant="30" id="OcS-0Q-SDr"/>
+                                        </constraints>
+                                        <state key="normal" image="000000">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juu-yy-L7S">
+                                        <rect key="frame" x="293" y="270" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="NxU-3K-GXk"/>
+                                            <constraint firstAttribute="height" constant="30" id="kcN-i9-SHu"/>
+                                        </constraints>
+                                        <state key="normal" image="00FF00">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -472,6 +549,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="000000" width="480" height="480"/>
+        <image name="00FF00" width="480" height="480"/>
+        <image name="336699" width="480" height="480"/>
+        <image name="660099" width="480" height="480"/>
+        <image name="FF0000" width="480" height="480"/>
+        <image name="FF6600" width="480" height="480"/>
+        <image name="FFCC00" width="480" height="480"/>
         <image name="info" width="256" height="256"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
