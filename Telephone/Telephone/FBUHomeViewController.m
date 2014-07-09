@@ -41,6 +41,7 @@
     [super viewDidLoad];
     [self.startButton setEnabled:NO];
     NSLog(@"View did load");
+
 }
     
     
